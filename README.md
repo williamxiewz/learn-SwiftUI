@@ -1,21 +1,5 @@
 # SwiftUI视频系列教程
-## 本套代码和视频配套使用，欢迎购买本套视频。
-![image info](./logo.png)
 
-#### SwiftUI视频系列教程由<strong style="color: lightblue; opacity: 0.80;">苏州丰源天下传媒有限公司</strong>出品
-#### <strong style="color: lightblue; opacity: 0.80;">Suzhou Fengyuan World Media Co.,Ltd</strong>
-
-#
-| 视频平台 | 视频链接 | 
-|:-----------|:------------|
-| 网易云课堂    |     [丰源天下传媒](https://study.163.com/course/introduction.htm?courseId=1212173805#/courseDetail?tab=1 "丰源天下传媒") |
-| 腾讯课堂    |     [丰源天下传媒](https://ke.qq.com/course/4031190?tuin=14527f38 "丰源天下传媒") |
-| 抖音    |     [丰源天下传媒](https://student-api.iyincaishijiao.com/t/dWNtL5k/ "丰源天下传媒") |
-| 微信公众号    |     [暂时未开通](暂时未开通 "暂时未开通") |
-| B站    |     [丰源天下传媒](https://space.bilibili.com/1311776362 "暂时未开通") |
-
-# 
-| No | 视频标题 | 代码 |
 |:-----------|:------------|:------------:|
 | 1    |     SwiftUI系列教程-第1讲_前言 |   -    |
 | 2    |     SwiftUI系列教程-第2讲_App开发准备 |   -    |
