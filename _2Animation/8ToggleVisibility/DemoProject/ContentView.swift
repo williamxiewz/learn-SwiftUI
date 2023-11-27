@@ -15,10 +15,12 @@ struct ContentView : View {
     var body: some View {
         
         VStack {
-            Toggle(isOn: $showingPassword.animation(.spring())) {
+//            Toggle(isOn: $showingPassword.animation(.spring())) {
+//                Text("Toggle Password")
+//            }
+            Toggle(isOn: $showingPassword) {
                 Text("Toggle Password")
             }
-
             if showingPassword {
                 TextField("Password", text: $password)
                     .padding()

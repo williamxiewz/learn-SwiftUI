@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView : View {
+    //
     var myDateFormatter: DateFormatter {
         let formatter = DateFormatter()
         formatter.dateStyle = .long
@@ -23,7 +24,7 @@ struct ContentView : View {
             }
             
             DatePicker(selection: $selectedDate, displayedComponents: DatePickerComponents.date) {
-                Text("Date")
+                Text("Da2te")
             }
 
             DatePicker(selection: $selectedDate,in: Date()...Date().advanced(by: 7*24*3600), displayedComponents: [.date, .hourAndMinute]) {

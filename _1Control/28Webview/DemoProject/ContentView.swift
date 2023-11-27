@@ -15,16 +15,19 @@ struct ContentView : UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: WKWebView, context: UIViewRepresentableContext<ContentView>) {
-        let request = URLRequest(url:URL(string: "https://apple.com")!)
+        let request = URLRequest(url:URL(string: "https://apple.com.cn")!)
         uiView.load(request)
     }
 }
 
-#if DEBUG
-struct ContentView_Previews : PreviewProvider {
-    
-    static var previews: some View {
-        ContentView()
-    }
+//#if DEBUG
+//struct ContentView_Previews : PreviewProvider {
+//    
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
+//#endif
+#Preview{
+    ContentView()
 }
-#endif

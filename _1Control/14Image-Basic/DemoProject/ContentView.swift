@@ -16,7 +16,7 @@ struct ContentView : View {
             Image("girlPicture")
              
             Image(systemName: "arkit")
-                .foregroundColor(.orange)
+                .foregroundColor(.blue)
                 .font(.system(size: 48))
  
             Image("girlPicture")

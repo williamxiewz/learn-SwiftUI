@@ -19,7 +19,10 @@ struct ContentView : View {
             ZStack{
                 Image("texture")
                 Image("girlPicture")
-                    .blendMode(.multiply)
+//                    .blendMode(.multiply)
+//                    .blendMode(.overlay)
+                    
+                
             }
         }
         .padding()

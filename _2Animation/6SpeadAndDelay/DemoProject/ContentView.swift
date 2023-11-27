@@ -15,8 +15,6 @@ struct ContentView : View {
 //            .speed(1)
 //            .speed(5)
             .delay(2)
-            
-            
         }
 
     var body: some View {

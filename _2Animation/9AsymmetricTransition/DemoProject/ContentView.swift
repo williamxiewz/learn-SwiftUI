@@ -25,16 +25,16 @@ struct ContentView : View {
                 
 //                Image("logo")
 //                    .transition(.move(edge: .top))
-                
+//                
 //                Image("logo")
 //                    .transition(.scale(scale: 0))
-                
+//                
 //                Image("logo")
 //                    .transition(.slide)
                 
-                Image("logo")
-                    .transition(.asymmetric(insertion: .scale(scale: 0), removal: .slide))
-                
+//                Image("logo")
+//                    .transition(.asymmetric(insertion: .scale(scale: 0), removal: .slide))
+//                
 //                Image("logo")
 //                    .transition(AnyTransition.scale(scale: 0).combined(with:.slide))
             }

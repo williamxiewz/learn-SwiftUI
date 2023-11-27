@@ -15,8 +15,11 @@ struct ContentView : View {
             
             VStack{
                 Image("girlPicture")
-                    .scaleEffect(0.8)
+//                    .scaleEffect(0.8)
                 
+                Image("girlPicture")
+                    .scaleEffect(0.8)
+                 
                 Image("girlPicture")
                     .scaleEffect(CGSize(width: 1.2, height: 1))
                 

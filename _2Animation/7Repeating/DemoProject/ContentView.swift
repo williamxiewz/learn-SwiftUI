@@ -14,7 +14,7 @@ struct ContentView : View {
     var animation: Animation {
         Animation.spring()
 //             .repeatForever()
-//            .repeatForever(autoreverses: false)
+            .repeatForever(autoreverses: false)
             .repeatCount(3)
     }
 

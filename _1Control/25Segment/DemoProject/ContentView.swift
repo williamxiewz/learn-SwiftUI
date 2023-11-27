@@ -20,6 +20,7 @@ struct ContentView : View {
                 Text(self.animals[$0]).tag($0)
                }
             }.pickerStyle(SegmentedPickerStyle())
+            
             Text("Your choice: \(animals[selectedAnimal])")
         }
     }

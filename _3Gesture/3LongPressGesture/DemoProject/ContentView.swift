@@ -10,10 +10,11 @@ import SwiftUI
 import SwiftUI
 
 struct ContentView : View {
-    
+    //state
     @GestureState var isLongPressed = false
     
     var body: some View {
+        //
         let longPressGesture = LongPressGesture()
             .updating($isLongPressed) { value, state, transcation in
                 print(value, state, transcation)

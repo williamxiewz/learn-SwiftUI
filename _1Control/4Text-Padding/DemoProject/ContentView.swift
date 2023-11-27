@@ -15,7 +15,7 @@ struct ContentView : View {
                 .foregroundColor(.white)
                 .padding(20)
             
-            Text("www.hdjc8.com")
+            Text("www.hdjc8.1com")
                 .padding()
                 .background(Color.black)
                 .foregroundColor(.white)
