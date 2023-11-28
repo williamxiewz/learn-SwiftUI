@@ -9,7 +9,8 @@ import SwiftUI
 
 struct DetailView: View {
     var body: some View {
-        Text("Detail")
+        
+       return Text("Detail")
         .onAppear {
             print("DetailView appeared!")
         }.onDisappear {
@@ -22,9 +23,9 @@ struct ContentView : View {
     
     @State private var isPresented = false
     
-    var body: some View
-    {
-        Text("Show Detail > ").sheet(isPresented: $isPresented, content: {
+    var body: some View {
+        
+       return  Text("Show Detail > ").sheet(isPresented: $isPresented, content: {
             DetailView()
         }).onTapGesture {
             self.isPresented = true

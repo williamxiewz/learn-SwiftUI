@@ -8,20 +8,24 @@
 import SwiftUI
 
 struct ContentView : View {
-
+    
     private var languages = ["Swift", "Objective-C"]
     @State private var selectedLanguage = 0
     @State var workingYear: Double = 2
     @State var enableNotification = false
-
+    
     var body: some View {
         NavigationView {
             Form {
-                Section(header: Text("Please enter your information:"), footer: Text("Note: Enabling notification to get more infomration")) {
+                Section(header:
+                            Text("Please enter your information:"),
+                        footer:
+                            Text("Note: Enabling notification to get more infomration"))
+                {
                     Picker(selection: $selectedLanguage, label: Text("Languages")) {
-                       ForEach(0 ..< languages.count) {
-                        Text(self.languages[$0]).tag($0)
-                       }
+                        ForEach(0 ..< languages.count) {
+                            Text(self.languages[$0]).tag($0)
+                        }
                     }.pickerStyle(SegmentedPickerStyle())
                     HStack{
                         Text("Working years")
@@ -34,7 +38,7 @@ struct ContentView : View {
                 }
                 
                 Button(action: {
-                // activate theme!
+                    // activate theme!
                     print("Your programming language: \(self.languages[self.selectedLanguage])")
                     print("Your working years: \(Int(self.workingYear))")
                     print("Enable notification: \(self.enableNotification)")
@@ -46,11 +50,7 @@ struct ContentView : View {
     }
 }
 
-#if DEBUG
-struct ContentView_Previews : PreviewProvider {
-    
-    static var previews: some View {
-        ContentView()
-    }
+
+#Preview {
+    ContentView()
 }
-#endif

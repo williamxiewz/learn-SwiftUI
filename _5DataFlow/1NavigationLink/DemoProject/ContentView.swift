@@ -24,7 +24,7 @@ struct ContentView : View {
         
             NavigationView {
                 HStack{
-                    NavigationLink(destination: MyDetailView(message: "Detail Page #2") ) {
+                    NavigationLink(destination: MyDetailView(message: "Detail Page 123#2") ) {
                         Text("Go detail Page #2 >")
                     }
                     .navigationBarTitle("Index Page #1")
@@ -46,10 +46,8 @@ struct MyDetailView: View {
     }
 }
 
-#if DEBUG
-struct ContentView_Previews : PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+
+
+#Preview{
+    ContentView()
 }
-#endif

@@ -28,7 +28,7 @@ struct ContentView : View {
                     Toggle(isOn: $enableNotification) {
                         Text("Enable Notification")
                     }
-                }.disabled(enableForm)
+                }.disabled(!enableForm)
                 
             }.navigationBarTitle(Text("Profiles"))
         }

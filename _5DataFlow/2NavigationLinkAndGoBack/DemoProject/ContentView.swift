@@ -29,8 +29,10 @@ struct ContentView : View {
         NavigationView{
             VStack{
                 NavigationLink(destination: DetailView(preView: self), isActive: $isPresented) {
+                    
                     Image("logo").renderingMode(.original)
                     Text("Next Page >")
+                    
                 }
             }
         }

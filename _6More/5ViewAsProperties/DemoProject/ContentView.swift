@@ -12,9 +12,10 @@ struct ContentView : View {
     let icon = Image(systemName: "book.fill")
     let title = Text("Interactive Tutorials")
     let flag = Image(systemName: "icloud.and.arrow.down")
-    
+    // view as property
     var body: some View {
-        HStack(alignment: .bottom, spacing: 40){
+        
+        return HStack(alignment: .bottom, spacing: 40){
             icon
             title
             Spacer()

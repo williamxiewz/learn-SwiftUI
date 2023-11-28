@@ -20,8 +20,8 @@ struct ContentView : View {
 //            Text("SwiftUI's NavigationView")
 //                .navigationBarTitle(Text("SwiftUI"), displayMode: .large)
             
-            Text("SwiftUI's NavigationView")
-                .navigationBarTitle(Text("SwiftUI"), displayMode: .inline)
+//            Text("SwiftUI's NavigationView")
+//                .navigationBarTitle(Text("SwiftUI"), displayMode: .inline)
         }
     }
 }

@@ -31,10 +31,13 @@ struct ContentView : View {
     }
 }
 
-#if DEBUG
-struct ContentView_Previews : PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+
+
+#Preview{
+    let model = UserModel()
+    model.nickName = "Super man"
+    
+    
+    ContentView().environmentObject(model)
 }
-#endif
+

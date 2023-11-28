@@ -23,7 +23,7 @@ struct ContentView : View {
             .navigationBarItems(trailing: EditButton())
         }
     }
-
+    
     func deleteItem(at offsets: IndexSet) {
         if let first = offsets.first {
             languages.remove(at: first)

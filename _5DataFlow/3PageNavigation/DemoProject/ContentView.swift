@@ -20,9 +20,11 @@ struct ContentView : View {
         return NavigationView{
             List{
                 ForEach(messages, id: \.self) { message in
+                   
                     NavigationLink(destination: DetailView(imageName: message.pictureName)) {
                         Text(message.description)
                     }
+                    
                 }
             }.navigationBarTitle("Picture List")
         }

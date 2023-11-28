@@ -23,17 +23,20 @@ struct ContentView : View {
                     else{
                         Text("Show Form")
                     }
+                    
+                    
                 }
                 
-                if(showingVisible)
-                {
+                if(showingVisible){
                     Section(header: Text("Please enter your information:")) {
                         
                         TextField("Username", text: $userName)
                         SecureField("Password", text: $password)
                     }
                 }
-            }.navigationBarTitle(Text("Profiles"))
+                
+            }
+            .navigationBarTitle(Text("Profiles"))
         }
     }
 }

@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
-        VStack(alignment: .center, spacing: 20){
+        
+       return VStack(alignment: .center, spacing: 20){
             Text("Dynamic Type sizes")
                 .font(.system(size: 48))
                 .foregroundColor(Color.secondary)

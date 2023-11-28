@@ -33,3 +33,16 @@ struct ContentView_Previews : PreviewProvider {
     }
 }
 #endif
+
+//#Preview {
+//    Group {
+//       ContentView()
+//          .previewDevice(PreviewDevice(rawValue: "iPhone SE"))
+//          .previewDisplayName("Device-SE")
+//
+//       ContentView()
+//          .previewDevice(PreviewDevice(rawValue: "iPhone XS Max"))
+//          .previewDisplayName("Device-XS Max")
+//    }
+//    
+//}

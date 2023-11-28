@@ -19,7 +19,7 @@ struct ContentView : View {
                     }
                     .onDelete(perform: delete)
                 }
-                .navigationBarItems(trailing: EditButton())
+//                .navigationBarItems(trailing: EditButton())
             }
         }
 
