@@ -25,8 +25,7 @@ struct TestAnyLayoutView1: View {
    }
 }
 
-struct TestAnyLayoutView1_Previews: PreviewProvider {
-    static var previews: some View {
-        TestAnyLayoutView1()
-    }
+
+#Preview {
+    TestAnyLayoutView1()
 }

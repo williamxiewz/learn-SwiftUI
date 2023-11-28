@@ -9,8 +9,10 @@ import SwiftUI
 
 struct TestAnyLayoutView3: View {
     @State var orientationInfo = ""
+    
     var body: some View {
-        GeometryReader { geo in 
+        
+        GeometryReader { geo in
             VStack {
                 Text(self.orientationInfo)
                     .foregroundColor(Color.black)
@@ -36,14 +38,16 @@ struct TestAnyLayoutView3: View {
         }
         .onRotate { newOrientation in
             print("isLandscape : \(newOrientation.isLandscape)")
-            orientationInfo = newOrientation.isLandscape ? "横屏" : "竖屏"
+            orientationInfo = newOrientation.isLandscape ? "12横屏" : "竖屏34"
         }
     }
 }
 
 struct DeviceRotationViewModifier: ViewModifier {
     let action: (UIDeviceOrientation) -> Void
+    
     func body(content: Content) -> some View {
+        
         content
             .onAppear()
             .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
@@ -53,6 +57,7 @@ struct DeviceRotationViewModifier: ViewModifier {
 }
 extension View {
     func onRotate(perform action: @escaping (UIDeviceOrientation) -> Void) -> some View {
+        
           self.modifier(DeviceRotationViewModifier(action: action))
     }
 }

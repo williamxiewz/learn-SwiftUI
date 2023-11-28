@@ -9,7 +9,8 @@ import SwiftUI
 
 struct TestBottomsheetView3: View {
     @State private var showingStudent = false
-
+// 0.2...1 (0.1)
+    // 0.2 0.3 0.4   1
     let heights = stride(from: 0.2, through: 1.0, by: 0.1).map {                            PresentationDetent.fraction($0)
     }
 
