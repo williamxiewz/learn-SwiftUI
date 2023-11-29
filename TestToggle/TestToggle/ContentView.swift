@@ -21,18 +21,22 @@ struct ContentView: View {
         Course(id: "Swift 开发进阶", isSubscribed: false),
         Course(id: "Swift Combine 框架", isSubscribed: true)
     ]
-     
+    
     var body: some View {
-        VStack {
+        
+        return VStack {
             Form {
+                
                 Section {
-//                    ForEach(courseList, id: \.isSubscribed) { list in
-//
-//                    }
+                    //                    ForEach(courseList, id: \.isSubscribed) { list in
+                    //
+                    //                    }
                     ForEach($courseList) { $list in
                         Toggle(list.id, isOn: $list.isSubscribed)
                     }
+                    
                 }
+                
                 Section {
                     Toggle(sources: $courseList, isOn: \.isSubscribed,  label: {
                         Text("我要学习所有课程")
@@ -44,8 +48,7 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+
+#Preview {
+    ContentView()
 }

@@ -11,6 +11,7 @@ import SwiftUI
 struct TestNavigationApp: App {
     var body: some Scene {
         WindowGroup {
+//            TestMainView()
             NavigationSplitViewTest2()
         }
     }

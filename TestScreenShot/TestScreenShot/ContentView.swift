@@ -17,7 +17,8 @@ struct ContentView: View {
     // ImageRenderer 对UIKit 的支持不是很好！！
      var screenShotView: some View {
      BrowserViewControllerWrapper()
-          .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height - 300)
+          .frame(width: UIScreen.main.bounds.width,
+                 height: UIScreen.main.bounds.height - 300)
      }
     
 //    var screenShotView: some View {

@@ -25,10 +25,14 @@ struct TestSearchBarView4: View {
   @State private var searchScope = SearchScope.it
   
   var body: some View {
-      NavigationStack {
+      
+     return NavigationStack {
           List {
               ForEach(results) { jobInfo in
-                  NavigationLink(destination: Text(jobInfo.desc)) {
+                  //
+                  NavigationLink(destination:
+                                    Text(jobInfo.desc)) {
+                    //
                       VStack(alignment: .leading) {
                           Text(jobInfo.job)
                               .font(.title3)
@@ -36,7 +40,9 @@ struct TestSearchBarView4: View {
                           Text(jobInfo.desc)
                               .foregroundColor(.green)
                       }
+                      
                   }
+                  
               }
           }
           .searchable(text: $searchTerm)
@@ -76,8 +82,6 @@ struct TestSearchBarView4: View {
   }
 }
 
-struct TestSearchBarView4_Previews: PreviewProvider {
-    static var previews: some View {
-        TestSearchBarView4()
-    }
+#Preview{
+    TestSearchBarView4()
 }

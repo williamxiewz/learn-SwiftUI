@@ -55,9 +55,9 @@
 			children = (
 				8B686D18293C7E3A00D3F7D2 /* TestRenameButtonApp.swift */,
 				8B686D1A293C7E3A00D3F7D2 /* ContentView.swift */,
+				8B686D26293C811800D3F7D2 /* FocusStateView.swift */,
 				8B686D1C293C7E3E00D3F7D2 /* Assets.xcassets */,
 				8B686D1E293C7E3E00D3F7D2 /* Preview Content */,
-				8B686D26293C811800D3F7D2 /* FocusStateView.swift */,
 			);
 			path = TestRenameButton;
 			sourceTree = "<group>";

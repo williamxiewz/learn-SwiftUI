@@ -32,8 +32,10 @@ struct TestLocationDetectionView2: View {
 struct GeometryRectangle: View {
     @State var fontBold : Bool = false
     var color: Color
+    
     var body: some View {
-        GeometryReader { geometry in
+        
+       return  GeometryReader { geometry in
             VStack {
                 Button(action: {
                     print(geometry.frame(in: .global).minX)

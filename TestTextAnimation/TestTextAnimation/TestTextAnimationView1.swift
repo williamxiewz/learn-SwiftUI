@@ -15,7 +15,7 @@ struct TestTextAnimationView1: View {
     
     var body: some View {
         
-        VStack(spacing: 30) {
+        return VStack(spacing: 30) {
             Button(action: {
                 withAnimation(.easeInOut(duration: 0.5)) {
                     opacity = 1
@@ -23,7 +23,8 @@ struct TestTextAnimationView1: View {
                     isBold = true
                 }
             }, label: {
-                Text("显示").foregroundColor(.white)
+                Text("显示")
+                    .foregroundColor(.white)
             })
             
             Button(action: {
@@ -49,11 +50,12 @@ struct TestTextAnimationView1: View {
                 .border(.red, width: 1)
                 .fontWeight(isBold ? .bold : .regular )
             
-        }.font(.largeTitle)
-            .frame(width: UIScreen.main.bounds.width,
-                   height: UIScreen.main.bounds.height)
-            .background(.pink.gradient)
-    
+        }
+        .font(.largeTitle)
+        .frame(width: UIScreen.main.bounds.width,
+               height: UIScreen.main.bounds.height)
+        .background(.pink.gradient)
+        
     }
 }
 

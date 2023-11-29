@@ -21,8 +21,8 @@ struct TestPasteButtonView2: View {
                        }
                    }
                }
-           }
-           .buttonBorderShape(.capsule)
+               
+           }.buttonBorderShape(.capsule)
            
            if let userPastedImageObj {
                Image(uiImage: userPastedImageObj)

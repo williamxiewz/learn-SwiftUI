@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-// navigationDestination 修饰符把 跳转画面和 NavigationLink 分开定义。
+// navigationDestination 修饰符
+//把 [跳转画面] 和 [NavigationLink] 分开定义。
 struct NavigationStackTest2: View {
     var body: some View {
        NavigationStack {

@@ -22,25 +22,31 @@ struct Grade: Identifiable, Hashable {
 
 struct NavigationSplitViewTest2: View {
     @State private var grades = [Grade(name: "Swift进阶",students: ["学员01", "学员02", "学员03"]),
-                            Grade(name: "Swift基础",students: ["学员11", "学员12", "学员13"]),
-                            Grade(name: "SwiftUI新特性",students: ["学员21", "学员22"])]
-
+                                 Grade(name: "Swift基础",students: ["学员11", "学员12", "学员13"]),
+                                 Grade(name: "SwiftUI新特性",students: ["学员21", "学员22"])]
+    
     @State private var selectedGrade: Grade?
     @State private var selectedStudent: String?
-
+    
     var body: some View {
         NavigationSplitView {
+            
             List(grades, selection: $selectedGrade) { grade in
                 Text(grade.name).tag(grade)
-            }.navigationSplitViewColumnWidth(200)
-        } content: {
-            List(selectedGrade?.students ?? [], id: \.self, selection: $selectedStudent) { student in
-                Text(student)
             }
-        } detail: {
-            Text(selectedStudent ?? "没有选择学生")
+            .navigationSplitViewColumnWidth(200)
+            
         }
-        .navigationSplitViewStyle(.automatic)
+    content: {
+        List(selectedGrade?.students ?? [],
+             id: \.self,
+             selection: $selectedStudent) { student in
+            Text(student)
+        }
+    } detail: {
+        Text(selectedStudent ?? "没有选择学生")
+    }
+    .navigationSplitViewStyle(.automatic)
     }
 }
 

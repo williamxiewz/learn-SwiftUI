@@ -17,14 +17,21 @@ struct NavigationSplitViewTest1: View {
     @State private var selectedStudent: String?
 
     var body: some View {
+        
         NavigationSplitView {
+            
             List(students, id: \.self,
                  selection: $selectedStudent,
                  rowContent: { rowData in
+                
                     self.studentView(rowData)
+                
                 })
+            
         } detail: {
-                    Text(selectedStudent ?? "没有学员信息.")
+                  
+            Text(selectedStudent ?? "没有学员信息.")
+            
         }.navigationTitle("NavigationSplitViewTest1")
     }
     
@@ -33,10 +40,10 @@ struct NavigationSplitViewTest1: View {
             Label("学员:\(desc)", systemImage: "person.circle")
         }
     }
+    
 }
 
-struct NavigationSplitViewTest1_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationSplitViewTest1()
-    }
+
+#Preview {
+    NavigationSplitViewTest1()
 }

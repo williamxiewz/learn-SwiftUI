@@ -18,7 +18,9 @@ struct TestDefersSystemGesturesView1: View {
            .gesture(
                DragGesture().onChanged { value in
                    input = value.location.y - value.startLocation.y
-               }
+               }.onEnded({ v in
+                   input = 0
+               })
            )
            .background(.cyan.gradient)
            

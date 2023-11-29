@@ -26,6 +26,7 @@ struct TestGridView1: View {
                     .frame(width: CELL_WIDTH, height: CELL_HIGHT)
                     .background(.gray)
             }
+            
             GridRow {
                 Text("4")
                     .frame(width: CELL_WIDTH, height: CELL_HIGHT)
@@ -64,8 +65,7 @@ struct TestGridView1: View {
     }
 }
 
-struct TestGridView1_Previews: PreviewProvider {
-    static var previews: some View {
-        TestGridView1()
-    }
+
+#Preview {
+    TestGridView1()
 }

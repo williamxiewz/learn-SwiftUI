@@ -10,14 +10,17 @@ import StoreKit
 
 struct ContentView: View {
     @Environment(\.requestReview) var requestReview
+    
     var body: some View {
-        VStack {
+        return VStack {
+            
             Button {
                 requestReview()
             } label: {
                 Text("用户评价")
                     .foregroundColor(.red)
             }
+            
         }
         .environment(\.locale, Locale(identifier: "zh-Hant"))
         

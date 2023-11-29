@@ -11,8 +11,9 @@ struct ContentView: View {
     @State private var value = 0.0
     
     var body: some View {
-        VStack (spacing: 30) {
-            
+        
+       return VStack (spacing: 30) {
+           
             HStack{
                 Image(systemName: "chart.bar.fill", variableValue: 0.3)
                 Image(systemName: "chart.bar.fill", variableValue: 0.6)

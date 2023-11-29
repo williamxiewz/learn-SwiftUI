@@ -8,7 +8,7 @@
 import SwiftUI
 
 // 1. 学习使用 NavigationPath 进行画面的初始化
-// 2. 复习在画面里 初始化 State变量
+// 2. 复习 在画面里 初始化 State变量
 // 3. 学习 navigationDestination 的 连续使用（类型可以不同）
 
 struct NavigationStackTest4: View {

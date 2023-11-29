@@ -11,17 +11,16 @@ struct ContentView: View {
     
     @State var isBold = false
     @State var isItalic = false
-     
+    
     var body: some View {
-        
-        VStack(spacing: 20) {
+       return VStack(spacing: 20) {
             Text("SwiftUI")
                 .italic()
             
             Text("苏州丰源天下传媒")
-                 .bold()
-                 .italic()
-                 
+                .bold()
+                .italic()
+            
             
             Text("SwiftUI苏州丰源天下传媒")
                 .bold(isBold)

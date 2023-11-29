@@ -13,7 +13,7 @@ struct ContentView: View {
     @State private var colorChanged2 = false
         
     var body: some View {
-        VStack {
+       return VStack {
             
             Button("点击改变字体颜色", action: {
                 colorChanged.toggle()
